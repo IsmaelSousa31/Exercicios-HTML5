@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários e Inputs</title>
+    <style>
+        label{
+           display: block;
+        }
+    </style>
+</head>
+<body>
+    <!--Formulários e Inputs
+    -->
+    <form action="#">
+        <!--Form action = é para onde vai ser enviado o formulário após preenchido-->
+        <fieldset><legend>Formulários HTML</legend></fieldset>
+        <!--Fieldset é utilizado para adicionar um espaço para preenchimento-->
+        <!--Legend é utilizado para adicionar o título dnetro do formulário-->
+        <br>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" disabled>
+        <!--é utilizado para formulários do tipo texto-->
+        <!--ID e Name serve para indentificar o que foi digitado no formulário. -->
+        <!--Placeholder  serve para auxiliar o usuário a indentificar o que aquele campo está solicitando.-->
+        <!--Disabled o input fica inativo o usuário não consegue digitar nele -->
+        <!--Reandoly mesma coisa do disabled a diferença é que o usuário consegue apenas abrir o input mas não interage-->
+        <label for="text">Sobrenome</label>
+        <input type="text" id="text" name="text" placeholder="Digite seu sobrenome">
+        <!--Label ex: nome é clicável, quando clicamos já abre para o input para ser digitado. -->
+        <br>
+        <br>
+        <button type="reset">reset</button>
+        <!--Button Type = Reset = reseta o formulário -->
+        <button type="submit">enviar</button>
+        <!--Button Type = submit = Envia o formulário-->
+        <br>
+        <br>
+        <input type="checkbox" checked>
+        <!-- Checkbox botão clicável de sim ou não -->
+        <!--Ckecked o botão já vem marcado -->
+
+        <br>
+        <br>
+        <input type="date" name="data" id="data">
+        <!--Date é utilizado para a data-->
+        <br>
+        <br>
+        <input type="datetime" name="datetime" id="datetime">
+        <!--O Date-time pode ser que alguns navegadores não o suporte por isso é necessário inserir assim no type: type="datetime-local"-->
+        <br>
+        <br>
+        <input type="time">
+        <!--Time é utilizado para a hora-->
+        
+        <br>
+        <br>
+        <input type="color">
+        <!--Input do tipo color type color não é necessário saber as cores de cabeça basta acessar o site: https://www.w3schools.com/colors/colors_picker.asp e colocar o texto hexadecimal
+        -->
+        <br>
+        <br>
+        <input type="email" name="email" id="email" placeholder="ex.:email@email.com">
+        <!--Email utilizado para o cadastro de email-->
+        <br>
+        <br>
+        <label for="file">arquivo</label>
+        <input type="file" accept=".png, .svg, image/*">
+        <!--Fotos utiliza o file que vai deixar escolher alguma arquivo. accept você especifica o que será aceito pode ser png, pdf e etc (observção eke não garante 100%) colocando o multipple você pode selecionar mais arquivos-->
+        <br>
+        <br>
+        <input type="number" min="0" max="10" step="5">
+        <!--Number onde você pode colocar por exemplo o telefone ou otros numeros utilizando o min=10 voce especifica que tem que inciar a partir do numero 10 o max é o limite maximo e o step serve para pular de ex: step=5 ira pular de 5 em 5 numeros-->
+
+    </form>
+    
+</body>
+</html>
